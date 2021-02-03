@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="drak_blue">#3023AE</color>
+    <color name="purple">#c86dd7</color>
+    <color name="login_from_details">#ccffffff</color>
+    <color name="login_from_details_medium">#66ffffff</color>
+    <color name="login_from_details_light">#17FFFFFF</color>
+    <color name="white">#fff</color>
+</resources>

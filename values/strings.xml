@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AIH</string>
+    <string name="email_hint">Email Address</string>
+    <string name="logo_des">logo</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_pass_text">Don\'t Remember Password?</string>
+    <string name="signup_text">Don\'t have an account?</string>
+    <string name="tvname">Academic Information Hub</string>
+    <string name="registration">Registration</string>
+    <string name="reg_name_hint">Full Name</string>
+    <string name="reg_uni_name">University</string>
+    <string name="rdotextt">Teacher</string>
+    <string name="rdotexts">Student</string>
+    <string name="reg_btn_text">Register</string>
+    <string name="dashboard_profile">profile</string>
+    <string name="dashboard_name">Name</string>
+    <string name="dashboard_country">Pakistan</string>
+    <string name="dashboard_messages">Messages</string>
+    <string name="interface_msg">Messages</string>
+    <string name="interface_groups">Post</string>
+    <string name="interface_uni">Universities</string>
+    <string name="interface_research">Research papers</string>
+    <string name="interface_setting">Settings</string>
+    <string name="interface_logout">Logout</string>
+    <string name="reg_universities_tv">Registered Universities</string>
+    <string name="Forget_Pass_reset_btn">Reset</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="forget_password">Forget Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_icon">Profile</string>
+    <string name="profile_buttton">Profile</string>
+    <string name="groups_button">Groups</string>
+    <string name="settings_button">Settings</string>
+    <string name="about_button">About</string>
+    <string name="logout_button">Logout</string>
+    <string name="signup">Signup</string>
+    <string name="ItemUsername">username</string>
+    <string name="message">Type a message...</string>
+    <string name="upload">Upload</string>
+    <string name="view_pdf_file">View Articles</string>
+    <string name="type_pdf_file_name">Type Article Name..</string>
+    <string name="Search">search</string>
+    <string name="profile_Image">profileimageview</string>
+    <string name="FulLname">fullnameuser</string>
+    <string name="search">Search</string>
+    <string name="description">Description</string>
+</resources>
