@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Register">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_lift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo_des"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tvname"
+        android:textAlignment="center"
+        android:textColor="@color/login_from_details"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_lift"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/registration"
+        android:textAlignment="center"
+        android:textColor="@color/login_from_details"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_lift"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/etext_bg"
+        android:hint="@string/reg_name_hint"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/login_from_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        android:drawableEnd="@drawable/ic_user_send"
+        app:layout_constraintTop_toBottomOf="@+id/registration" />
+
+    <EditText
+        android:id="@+id/university"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etext_bg"
+        android:hint="@string/reg_uni_name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/login_from_details"
+        android:drawableEnd="@drawable/uni_signup"
+        app:layout_constraintEnd_toStartOf="@id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <EditText
+        android:id="@+id/reg_mail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etext_bg"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="@color/login_from_details"
+        android:drawableEnd="@drawable/mail_icon"
+        app:layout_constraintEnd_toStartOf="@id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/university" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etext_bg"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@color/login_from_details"
+        android:drawableEnd="@drawable/pass_icon"
+        app:layout_constraintEnd_toStartOf="@id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/reg_mail" />
+
+    <RadioGroup
+        android:id="@+id/radiog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toStartOf="@id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/reg_pass">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdotextt"
+            android:layout_marginLeft="80dp"
+            android:buttonTint="#3CBDFE"
+            android:textColor="@color/login_from_details"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdotexts"
+            android:buttonTint="#3CBDFE"
+            android:textColor="@color/login_from_details" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Reg_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/login_from_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/radiog"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

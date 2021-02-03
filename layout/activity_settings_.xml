@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smartapp.Settings_Activity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cycle_profile"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        app:civ_circle_background_color="@color/purple" />
+
+
+    <EditText
+        android:id="@+id/setting_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_profile_image"
+        android:inputType="textMultiLine"
+        android:hint="User Name"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableStart="@drawable/ic_user_send"
+        android:layout_marginTop="35dp"
+        />
+
+    <EditText
+        android:id="@+id/settings_uni_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="University"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="35dp"
+        android:drawableStart="@drawable/uni_signup"
+        android:layout_below="@+id/setting_et_name"/>
+
+    <Button
+        android:id="@+id/Update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/settings_uni_name"
+
+        android:text="Update" />
+    <Button
+        android:id="@+id/change_pass_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/Update_btn"
+
+        android:text="Change Password" />
+    <Button
+        android:id="@+id/deActivate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/change_pass_btn"
+
+        android:text="DeActivate Account" />
+
+</RelativeLayout>

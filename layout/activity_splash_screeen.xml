@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".SplashScreeenActivity">
+
+    <ImageView
+        android:id="@+id/postBtn"
+        android:layout_marginTop="100dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_action_institute"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/splashScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcom To AIH"
+        android:textStyle="normal"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/postBtn"/>
+
+
+</RelativeLayout>

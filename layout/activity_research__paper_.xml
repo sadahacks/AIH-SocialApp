@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ResearchPaper.Research_Paper_Activity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_lift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <EditText
+        android:id="@+id/txt_Pdf_Btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="180dp"
+        android:background="@drawable/etext_bg"
+        android:hint="@string/type_pdf_file_name"
+        android:padding="16dp"
+        android:textColor="@color/login_from_details"
+
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_lift"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/upload_pdf_Btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/upload"
+        android:textAllCaps="false"
+        android:textColor="@color/login_from_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_lift"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Pdf_Btn" />
+    <Button
+        android:id="@+id/view_pdf_Btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/view_pdf_file"
+        android:textColor="@color/login_from_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_lift"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right"
+        android:onClick="btn_action"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/upload_pdf_Btn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/cardview_light_background"
+    tools:context=".ResearchPaper.Research_Paper_Activity">
+
+    <EditText
+        android:id="@+id/txt_Pdf_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type PDF File Name.."
+        android:textColor="#2C2727"
+        android:layout_marginTop="150dp"
+        android:textSize="22sp"/>
+    <Button
+        android:id="@+id/upload_pdf_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/upload"
+        android:background="@color/cardview_dark_background"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+</LinearLayout>-->
