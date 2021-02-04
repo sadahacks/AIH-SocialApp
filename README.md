@@ -1,6 +1,6 @@
 # AIH-SocialApp
 
-AIH-Academic Information Hub is Social App in which is actually build for academia. It's plateforme in which they can post their articles, Researches, and also post knowladge for others. Here they can also chat and make groups.
+AIH-Academic Information Hub is Social App, actually, this app is developed for academia. It's a platform in which they can post their articles, Researches, post knowledge for others, and also they can chat with each other and make groups.
 
 
 <B>Signin Activity</B>
